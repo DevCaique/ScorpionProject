@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './style.css';
 
 export function Navbar() {
@@ -6,19 +7,18 @@ export function Navbar() {
 
         <>
 
-            <header className="header" id="header">
+            <header className="header container" id="header">
 
                 <nav className="nav">
 
-                    <div className="logo-container">
-                        <p className="logo">Logo</p>
-                    </div>
+                    <Link to="/" className="nav-logo">Logo</Link>
 
                     <ul className="nav-menu">
-                        <li className="nav-item">Publicações</li>
-                        <li className="nav-item">Social</li>
-                        <li className="nav-item">Notificações</li>
-                        <li className="nav-item">Perfil</li>
+
+                        <li className="nav-item"><Link to="/Publicacoes" className='nav-link'>Publicações</Link></li>
+                        <li className="nav-item"><Link to="/Social" className="nav-link">Social</Link></li>
+                        <li className="nav-item"><Link to="/Perfil" className="nav-link">Perfil</Link></li>
+
                     </ul>
 
                 </nav>
@@ -26,7 +26,6 @@ export function Navbar() {
             </header>
 
         </>
-
 
     )
 

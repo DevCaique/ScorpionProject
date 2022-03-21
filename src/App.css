@@ -6,6 +6,17 @@
 
 :root{
 
+    /* Colros */
+    --clr-primary-900:rgb(69, 0, 0)  ;
+    --clr-primary-700:rgb(96, 0, 0) ;
+    --clr-primary-500:rgb(141, 0, 0) ;
+    --clr-primary-400:rgb(255, 0, 0) ;
+
+    --clr-neutral-900:rgb(0, 0, 0) ; /* Preto escuro */
+    --clr-neutral-700:rgb(19, 19, 19) ; /* Preto mais claro */   
+    --clr-neutral-500:rgb(236, 236, 236) ; /* Cinza claro */
+    --clr-neutral-400:rgb(255, 255, 255) ; /* Branco */
+
     /* Typography */
     --fz-largest: 2.441rem;
     --fz-larger: 1.953rem;
@@ -23,6 +34,23 @@
 
     --ff-body: 'Rubik', sans-serif;
 
+    /* Sizes */
+    --pr-largest: 8rem;
+    --pr-larger: 6rem;
+    --pr-medium: 4rem;
+    --pr-normal: 2rem;
+    --pr-small: 1rem;
+    --pr-smaller: .5rem;
+
+    --pe-largest: 8em;
+    --pe-larger: 6em;
+    --pe-medium: 4em;
+    --pe-normal: 2em;
+    --pe-small: 1em;
+    --pe-smaller: .5em;
+
+    --navbar-height: 6rem;
+    
 }
 
 /* ======================================== HTML Reseting ======================================== */
@@ -46,4 +74,21 @@ h3,
 h4,
 h5{
     font-weight: var(--fw-bold);
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ======================================== CSS Reusable Classes ======================================== */
+
+.container{
+    width: min(70rem, 90%);
+    margin-inline: auto;
 }

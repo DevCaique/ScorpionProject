@@ -1,4 +1,5 @@
-import { Login } from "./login";
+import { MyRoutes } from './MyRoutes';
+import './App.css';
 
 export function App() {
 
@@ -6,8 +7,7 @@ export function App() {
 
         <>
 
-            {/* App */}
-            <Login />
+            <MyRoutes />
 
         </>
 

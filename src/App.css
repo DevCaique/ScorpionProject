@@ -1,0 +1,49 @@
+/* ======================================== Google Fonts ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+/* ======================================== CSS Variables ======================================== */
+
+:root{
+
+    /* Typography */
+    --fz-largest: 2.441rem;
+    --fz-larger: 1.953rem;
+    --fz-large: 1.563rem;
+    --fz-medium: 1.25rem;
+    --fz-normal: 1rem;
+    --fz-small: 0.8rem;
+    --fz-smallest: 0.64rem;
+
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-medium: 500;
+    --fw-normal: 400;
+    --fw-thin: 300;
+
+    --ff-body: 'Rubik', sans-serif;
+
+}
+
+/* ======================================== HTML Reseting ======================================== */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+    font-size: var(--fz-normal);
+    font-weight: var(--fw-normal);
+    font-family: var(--ff-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-weight: var(--fw-bold);
+}
